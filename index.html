@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ✏️ 改這裡：瀏覽器分頁標題 -->
+  <title>范宇傑 · 個人名片</title>
+  <!-- ✏️ 改這裡：給 Google / 分享連結看的簡介 -->
+  <meta name="description" content="AI 內容創作者・自動化工具開發者。把點子變成能跑的東西。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Sora:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 背景動態光斑 -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <!-- 導覽列 -->
+  <header class="nav reveal">
+    <a href="#top" class="nav-logo">F<span>.</span></a>
+    <nav class="nav-links">
+      <a href="#about">關於</a>
+      <a href="#work">我在做什麼</a>
+      <a href="#projects">作品</a>
+      <a href="#contact">聯絡</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <p class="hero-hi reveal">嗨，我是</p>
+      <!-- ✏️ 改這裡：你的名字 -->
+      <h1 class="hero-name reveal">范宇傑</h1>
+      <!-- ✏️ 改這裡：一句話頭銜 -->
+      <p class="hero-title reveal">AI 內容創作者 · 自動化工具開發者</p>
+      <!-- ✏️ 改這裡：兩三句自我介紹 -->
+      <p class="hero-tagline reveal">
+        我用 AI 把腦袋裡的點子變成真的能跑的網站、工具與內容。
+        喜歡動手做，把麻煩的事自動化掉。
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#contact" class="btn btn-primary">跟我聯絡 →</a>
+        <a href="#projects" class="btn btn-ghost">看看作品</a>
+      </div>
+    </section>
+
+    <!-- 關於 -->
+    <section id="about" class="section">
+      <h2 class="section-title reveal"><span>01</span> 關於我</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <!-- ✏️ 改這裡：自我介紹段落 -->
+          <p>
+            我是一個喜歡把想法落地的人。從補漆筆色號查詢系統到 AI 內容生產線，
+            只要是能讓生活、工作更有效率的東西，我都想做做看。
+          </p>
+          <p>
+            相信「先做出來，再慢慢變好」。比起完美的計畫，
+            我更愛能動的原型。
+          </p>
+        </div>
+        <ul class="about-stats reveal">
+          <!-- ✏️ 改這裡：你的小數據（可自由換） -->
+          <li><strong>10+</strong><span>上線專案</span></li>
+          <li><strong>∞</strong><span>還在學的東西</span></li>
+          <li><strong>24/7</strong><span>AI 員工待命</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 我在做什麼 -->
+    <section id="work" class="section">
+      <h2 class="section-title reveal"><span>02</span> 我在做什麼</h2>
+      <div class="cards">
+        <!-- ✏️ 改這裡：每張卡片是一項你提供的能力/服務 -->
+        <article class="card reveal">
+          <div class="card-icon">🎨</div>
+          <h3>AI 內容創作</h3>
+          <p>生圖、生影片、生音樂、寫貼文。從 prompt 到成品的完整生產線。</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🛠️</div>
+          <h3>自動化工具開發</h3>
+          <p>把重複、繁瑣的流程寫成工具與腳本，讓機器幫你做。</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🚀</div>
+          <h3>網站 / 產品上線</h3>
+          <p>從想法、設計到部署，做出真的能用、能分享的網站。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 作品 -->
+    <section id="projects" class="section">
+      <h2 class="section-title reveal"><span>03</span> 精選作品</h2>
+      <div class="projects">
+        <!-- ✏️ 改這裡：每個你想展示的專案 -->
+        <a class="project reveal" href="https://carpen.fanyuchieh.workers.dev" target="_blank" rel="noopener">
+          <div class="project-head">
+            <h3>CARPEN 補漆筆色號系統</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p>輸入車款快速查到對應補漆筆色號，已上線。</p>
+          <div class="project-tags"><span>Cloudflare</span><span>查詢系統</span></div>
+        </a>
+        <a class="project reveal" href="#" target="_blank" rel="noopener">
+          <div class="project-head">
+            <h3>AI 內容生產線</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p>整合生圖、剪輯、發文的一站式 AI 創作工作流。</p>
+          <div class="project-tags"><span>AI</span><span>自動化</span></div>
+        </a>
+        <a class="project reveal" href="#" target="_blank" rel="noopener">
+          <div class="project-head">
+            <h3>你的下一個專案</h3>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p>把這格換成你想展示的作品，加上連結就完成。</p>
+          <div class="project-tags"><span>待補</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 聯絡 -->
+    <section id="contact" class="section section-contact">
+      <h2 class="section-title reveal"><span>04</span> 一起做點什麼？</h2>
+      <p class="contact-lead reveal">有想法、想合作，或只是想聊聊，都歡迎找我。</p>
+      <div class="contact-links reveal">
+        <!-- ✏️ 改這裡：你的聯絡方式 / 社群連結 -->
+        <a href="mailto:fanfan.computer168@gmail.com" class="contact-pill">✉️ Email</a>
+        <a href="#" target="_blank" rel="noopener" class="contact-pill">📘 Facebook</a>
+        <a href="#" target="_blank" rel="noopener" class="contact-pill">📸 Instagram</a>
+        <a href="#" target="_blank" rel="noopener" class="contact-pill">🧵 Threads</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> 范宇傑 · 用 ☕ 與 AI 打造</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
